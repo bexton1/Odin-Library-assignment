@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        table {
+            width: 40%;
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            color: black;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+         th {
+            background-color: rgba(0, 0, 0, 0.1);
+            color: rgb(0, 0, 0);
+        }
+        .new-book {
+            margin-top: 8px;
+        }
+        .active {
+            display: block;
+        }
+         form {
+            display: none;
+            background-color: black;
+            width: 180px;
+            padding: 10px;
+            font-family: arial;
+            margin-top: 2px;
+            box-shadow: 0px 5px 10px;
+    }
+    .toggle-form {
+     
+       background-color: #110f0f;
+       color: white;
+        border: none;
+        
+        cursor: pointer;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+        
+    }
+    .flex {
+        
+    }
+    .new-book {
+        background-color: #008AD8;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 6px 8px;
+        
+    }
+    .spliceLibrary {
+        background-color: black;
+        color: white;
+        border: none;
+        
+        cursor: pointer;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+    }
+    label {
+        color: white;
+        
+    }
+    input {
+        margin-bottom: 10px;
+    }
+  
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+            <table method = 'dialog' class="table">
+             
+            </table>
+            
+        
+        
+        <form class="form">
+            <label for="titles">Title:</label><br>
+            <input type="text" id="titles" name="fname"> <br>
+            <label for="authors">Author</label><br>
+            <input type="text" id="authors" name="lname"> <br>
+            
+
+            <label for="pagess">Pages:</label> <br>
+            <input type="text" id="pagess"> <br>
+
+            <label for="read-yes">Read:</label> 
+            <input value="read" name="read" type="radio" id="read-yes"> <br>
+            <label for="read-no">Not Read:</label> 
+            <input value="not read" name="read" type="radio" id="read-no"> <br>
+            <button type="submit" class="new-book">Submit Book</button>
+          </form>
+        
+    <script src="bookassignment.js"></script>
+</body>
+</html>

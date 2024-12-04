@@ -13,12 +13,11 @@ function Books(title, author, pages, read) {
     myLibrary.push(newBook)
   
   }
-  
-  
-
-
   const book1 = new Books('Lord of the Rings', 'J.R.R. Tolkien', '295', 'not read ')
   const book2 = new Books('Harry Potter', 'Philosophers Stone', '300', 'read')
+
+
+  
 
 //Library array
   const myLibrary = [book1, book2]
