@@ -1,11 +1,20 @@
-// constructor function
-function Books(title, author, pages, read) {
-    this.title = title,
-    this.author = author,
-    this.pages = pages,
-    this.read = read,
-    this.info = function () {return `${this.title} ${this.author} ${this.pages} ${this.read}`}
-  }
+// class function
+
+class Books {
+  title;
+  author;
+  pages;
+  read;
+  
+  constructor(title, author, pages, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+    
+}
+}
+
   
   // creates new object from form data and pushes to array
   function addBookToLibrary(title, author, pages, read) {
@@ -15,21 +24,6 @@ function Books(title, author, pages, read) {
   }
   const book1 = new Books('Lord of the Rings', 'J.R.R. Tolkien', '295', 'not read ')
   const book2 = new Books('Harry Potter', 'Philosophers Stone', '300', 'read')
-
-// class Books {
-  //title;
-  //author;
-  //pages;
-  //read;
-  //
-  //constructor(title, author, pages, read) {
-    //this.title = title;
-    //this.author = author;
-    //this.pages = pages;
-    //this.read = read;
-    // 
-//}
-//}
 
 
 //Library array
