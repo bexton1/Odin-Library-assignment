@@ -1,22 +1,14 @@
 // class function
 
 class Books {
-  title;
-  author;
-  pages;
-  read;
-  
-  constructor(title, author, pages, read) {
+ constructor(title, author, pages, read) {
     this.title = title;
     this.author = author;
     this.pages = pages;
     this.read = read;
-    
+  }
 }
-}
-
-  
-  // creates new object from form data and pushes to array
+ // creates new object from form data and pushes to array
   function addBookToLibrary(title, author, pages, read) {
     const newBook = new Books(title, author, pages, read)
     myLibrary.push(newBook)
